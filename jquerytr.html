@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th, td{
+            border:1px solid red
+            ;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <h2>Month:october</h2>
+
+    <table style="width:100%">
+      <tr>
+        <th>Date</th>
+        <th>Book Sealed</th>
+        <th>Chapter</th>
+        <th>Feedback</th>
+        <th>followup</th>
+      </tr>
+      <tr>
+        <td>7/10/23</td>
+        <td>Rev</td>
+        <td>chpt1:1-8</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>8/10/23</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>9/10/23</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>10/10/23</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>11/10/23</td>
+        <td></td>
+        <td></td>
+       <td></td>
+       <td></td>
+      </tr>
+    </table>
+
+    
+ <script type="text/javascript">
+  var rows =5;
+  var cols = 31;
+  var table = $('<table> <tbody>');
+      for (var r = 0; r <rows; r++)
+      {
+          var tr = $('<tr>');
+              for (var c = 0; c<cols;c++)
+              {
+                  $('<td>some value</td>').appendTo(tr);
+              }
+              tr.appendTo(table);
+      }
+      table.appendTo('body');
+</script>
+    
+  
+</body>
+</html>
