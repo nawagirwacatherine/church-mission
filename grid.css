@@ -6,7 +6,6 @@
     grid-template-rows: auto auto 1fr;
     grid-template-areas: "header" "left" "main" "right";
 }
-
 @media (min-width: 440px) {
     .conatainer{
         grid-template-columns: 150px 1fr 150px;
