@@ -1,0 +1,7 @@
+{
+    "rules": {
+        "alpha-value-natation": "number",
+        "selector-type-case": "lower",
+        "color-no-hex": true
+    }
+}
