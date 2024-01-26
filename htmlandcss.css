@@ -9,11 +9,20 @@ body{
     grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas:"head" "left" "main" "right"  "footer";
 }
-@media (min-width:440px){
-    .body{
-        grid-template-columns:150px 1fr 150px;
-        grid-template-rows: auto 1fr auto;
-        grid-template-areas: "header header header" "left main right" " footer footer footer";
+
+@media only screen and (max-width:600px){
+    body{
+        width: 100%;
+        background-color: darkseagreen;
+    }
+    
+}
+
+@media only screen and (min-width: 601px) and (max-width:768px) {
+    body {
+        width: 100%;
+        background-color: rgb(241, 211, 42);
+
     }
 }
 h1 {
@@ -101,9 +110,9 @@ nav a {
     font-weight: bold;
     font-size: 25px;
 }
-.main{
-    grid-area: main;
-    padding: 25px;
+
+.banner:hover{
+    color: rgb(244, 160, 160);
 }
 
 section{
@@ -121,6 +130,10 @@ article > img{
     border-radius: 20px;
    height: 100%;
 
+}
+article:hover{
+    color: darkturquoise;
+    cursor: pointer;
 }
 
 footer div.flex-container {
